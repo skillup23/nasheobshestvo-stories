@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .red-hat-fon {
+    background-image: url('../public/stories/RedHat/fonStories.jpg');
+    background-position: center;
+  }
+  .text-normal {
+    @apply text-base font-cloudWorld text-black;
+  }
+  .text-normal::first-letter {
+    initial-letter: 2 1;
+    @apply font-comial;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

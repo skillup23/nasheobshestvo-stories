@@ -11,7 +11,8 @@
     @apply text-base font-cloudWorld text-black;
   }
   .text-normal::first-letter {
-    initial-letter: 2 1;
+    /* initial-letter: 2 1; */
+    font-size: 30px;
     @apply font-comial;
   }
 }

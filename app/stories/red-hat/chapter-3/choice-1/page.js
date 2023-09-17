@@ -98,7 +98,7 @@ export default function RedHatChapter3_1() {
             </p>
             <div className="flex gap-2 justify-center">
               <ButtonStories
-                link="/stories/red-hat/chapter-3/choice-3"
+                link="/stories/red-hat/chapter-4/choice-3"
                 text="Выбрать"
               />
             </div>

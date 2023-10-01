@@ -21,12 +21,14 @@ function SearchBar() {
     }
     setActiveSearch(
       words
-        .filter((w) => w.title.toLowerCase().includes(e.target.value))
+        .filter((w) =>
+          w.title.toLowerCase().includes(e.target.value.toLowerCase())
+        )
         .slice(0, 8)
     );
   };
 
-  const handleClick = (title, text) => {
+  const handleClick = (text) => {
     setShowText(text);
 
     document.querySelector("input");
@@ -55,7 +57,7 @@ function SearchBar() {
             <span
               className='cursor-pointer'
               key={s.title}
-              onClick={() => handleClick(s.title, s.text)}
+              onClick={() => handleClick(s.text)}
             >
               {s.title}
             </span>

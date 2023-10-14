@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/words", {
+  const res = await fetch(`http://${process.env.LOCALHOST}:3000/api/words`, {
     next: { revalidate: 60 },
   });
 

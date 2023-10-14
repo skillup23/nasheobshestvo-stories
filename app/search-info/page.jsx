@@ -1,26 +1,26 @@
 import SearchBar from "@/components/SearchBar";
-// import { words } from "@/public/search-info/data";
-// import { words } from "@/public/search-info/data";
+import { words } from "@/public/search-info/data";
 
 export const metadata = {
   title: "Поиск определений",
   description: "Поиск определений Нашего Общества",
 };
 
-async function getData() {
-  const res = await fetch(process.env.URL + "/api/words", {
-    next: { revalidate: 60 },
-  });
+// async function getData() {
+//   const res = await fetch(process.env.URL + "/api/words", {
+//     next: { revalidate: 60 },
+//   });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch data");
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
 const SearchInfo = async () => {
-  const data = await getData();
+  // const data = await getData();
+  const data = words;
 
   return (
     <div className='m-8 mt-12 flex flex-col justify-center max-w-lg'>

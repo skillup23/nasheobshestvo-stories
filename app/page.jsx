@@ -14,6 +14,9 @@ export default function Home() {
         <Link href='/search-info' className='text-xl text-center border p-3'>
           Поиск определений
         </Link>
+        <Link href='/dashboard' className='text-xl text-center border p-3'>
+          Панель управления
+        </Link>
       </div>
     </main>
   );

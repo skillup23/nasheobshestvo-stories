@@ -20,7 +20,11 @@ export default function Header() {
           isMenuOpen ? "block" : "hidden"
         } fixed flex flex-col top-0 h-full w-full bg-black/[.9] text-white items-center justify-start`}
       >
-        <Link href='/' className='text-xl border p-2 my-2 text-center w-1/2'>
+        <Link
+          href='/'
+          onClick={() => visibleMenu()}
+          className='text-xl border p-2 my-2 text-center w-1/2'
+        >
           Главная
         </Link>
         <p className='text-xl border p-2 my-2 text-center w-1/2'>Сказки</p>

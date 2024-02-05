@@ -1,4 +1,4 @@
-import testFoto from '@/public/stories/RedHat/testNew.png';
+import imgData from '@/public/stories/RedHat/RH_start.JPG';
 import Image from 'next/image';
 import ButtonStories from '@/components/ButtonStories';
 import PageBook from '@/components/PageBook';
@@ -12,11 +12,11 @@ export default function RedHatChapter4_3() {
         pageOne={
           <div className="red-hat-fon p-3 rounded-lg">
             <Image
-              src={testFoto}
+              src={imgData}
               width={500}
               height={500}
               alt="Тестовая картинка"
-              className="my-5"
+              className="my-5 rounded-lg"
               priority
             />
             <p className="text-normal">Финал 3го пути</p>
@@ -32,11 +32,11 @@ export default function RedHatChapter4_3() {
         pageTwo={
           <div className="red-hat-fon p-3 rounded-lg z-10">
             <Image
-              src={testFoto}
+              src={imgData}
               width={500}
               height={500}
               alt="Тестовая картинка"
-              className="my-5"
+              className="my-5 rounded-lg"
               priority
             />
             <p className="text-normal">Финал 4го пути</p>

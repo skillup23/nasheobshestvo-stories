@@ -1,6 +1,6 @@
 import ButtonStories from '@/components/ButtonStories';
-import testFoto from '@/public/stories/RedHat/testNew.png';
 import Image from 'next/image';
+import imgData from '@/public/stories/RedHat/RH_city.JPG';
 import Link from 'next/link';
 
 export default function RedHatStart() {
@@ -9,11 +9,11 @@ export default function RedHatStart() {
       <h1 className="text-4xl font-comial my-4">Вступление</h1>
       <div className="red-hat-fon p-3 rounded-lg">
         <Image
-          src={testFoto}
+          src={imgData}
           width={500}
           height={500}
           alt="Тестовая картинка"
-          className="my-5"
+          className="my-5 rounded-lg"
           priority
         />
         <p className="text-base font-cloudWorld text-black">

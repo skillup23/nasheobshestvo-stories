@@ -1,6 +1,6 @@
-import testFoto from "@/public/stories/RedHat/testNew.png";
 import Image from "next/image";
 import ButtonStories from "@/components/ButtonStories";
+import imgData from "@/public/stories/RedHat/RH_start.JPG";
 
 export const metadata = {
   title: "Красная Шапочка",
@@ -16,11 +16,11 @@ export default function RedHat() {
           История о соверменной девочке с головным убором красного цвета
         </p>
         <Image
-          src={testFoto}
+          src={imgData}
           width={500}
           height={500}
           alt='Тестовая картинка'
-          className='my-5'
+          className='my-5 rounded-lg'
           priority
         />
         <div className='flex gap-2 justify-center'>

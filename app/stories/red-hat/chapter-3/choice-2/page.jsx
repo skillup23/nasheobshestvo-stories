@@ -1,31 +1,31 @@
-import testFoto from '@/public/stories/RedHat/testNew.png';
-import Image from 'next/image';
-import ButtonStories from '@/components/ButtonStories';
-import PageBook from '@/components/PageBook';
-import TitleChapter from '@/components/TitleChapter';
+import imgData from "@/public/stories/RedHat/RH-chapter3.JPG";
+import Image from "next/image";
+import ButtonStories from "@/components/ButtonStories";
+import PageBook from "@/components/PageBook";
+import TitleChapter from "@/components/TitleChapter";
 
 export default function RedHatChapter3_2() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-start p-2">
-      <TitleChapter text="Глава 3" />
+    <section className='flex min-h-screen flex-col items-center justify-start p-2'>
+      <TitleChapter text='Глава 3' />
       <PageBook
         pageOne={
-          <div className="red-hat-fon p-3 rounded-lg">
+          <div className='red-hat-fon p-3 rounded-lg max-w-md'>
             <Image
-              src={testFoto}
+              src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
-              className="my-5"
+              alt='Тестовая картинка'
+              className='my-5 rounded-lg'
               priority
             />
-            <p className="text-normal">
+            <p className='text-normal'>
               Бабушка жила за Парковой рощей, которая относилась к землям отдыха
               и рекреации (7). Идти через безлюдный парк Шапочке было лень, и
               она поймала такси. Шофером оказался Волк - барабанщик группы
               «Волчий вой».
             </p>
-            <p className="text-normal mt-2">
+            <p className='text-normal mt-2'>
               Красная Шапочка с первого взгляда не признала в нем участника
               любимой группы. Но когда Волк стал рассказывать, что такси – это
               хобби, приносящее небольшой доход, а вот настоящее дело – это
@@ -33,7 +33,7 @@ export default function RedHatChapter3_2() {
               узнала барабанщика, и с удовольствием поддерживала беседу и
               старалась понравиться Волку.
             </p>
-            <p className="text-normal mt-2">
+            <p className='text-normal mt-2'>
               Однако она не знала, что сам водитель-музыкант неоднократно
               привлекался сотрудниками сказочной полиции (10) за мошенничество и
               кражу в мелких размерах. Не добавляло хорошего настроения также то
@@ -41,45 +41,45 @@ export default function RedHatChapter3_2() {
               напомнил о необходимости своевременно уплатить алименты на его
               двоих детей от первого брака (11).
             </p>
-            <p className="text-normal mt-2">
+            <p className='text-normal mt-2'>
               Выведав в разговоре с Красной Шапочкой, то, что она едет к богатой
               бабушке, Волк решает напроситься в гости под предлогом «что-нибудь
               бы перекусить». Шапочка с удовольствием зовет Волка с собой,
               думая, что наконец-то ее мечта, повстречать кого-нибудь из любимой
               панк-группы, сбылась.
             </p>
-            <div className="flex gap-2 justify-center">
+            <div className='flex gap-2 justify-center'>
               <ButtonStories
-                link="/stories/red-hat/chapter-4/choice-2"
-                text="Выбрать"
+                link='/stories/red-hat/chapter-4/choice-2'
+                text='Выбрать'
               />
             </div>
           </div>
         }
         pageTwo={
-          <div className="red-hat-fon p-3 rounded-lg z-10">
+          <div className='red-hat-fon p-3 rounded-lg z-10 max-w-md'>
             <Image
-              src={testFoto}
+              src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
-              className="my-5"
+              alt='Тестовая картинка'
+              className='my-5 rounded-lg'
               priority
             />
-            <p className="text-normal">
+            <p className='text-normal'>
               Бабушка жила за Парковой рощей, которая относилась к землям отдыха
               и рекреации (7). Идти через безлюдный парк Шапочке было лень, и
               она села в сказочный трамвай (8), покатилась через весь город в
               гости.
             </p>
-            <p className="text-normal mt-2">
+            <p className='text-normal mt-2'>
               Трамвай битком был набит незнакомцами, особо выделялся среди всех
               крупный серый Волк, который сидел, развалившись на два сидения и
               не уступал пожилым и беременным место. На все замечания
               кондуктора, Волк огрызался и чуть не устроил потасовку с другими
               пассажирами трамвая.
             </p>
-            <p className="text-normal mt-2">
+            <p className='text-normal mt-2'>
               Красная Шапочка решает выйти немного раньше, а Волк выскакивает за
               ней. По пути он начинает приставать к девушке, и она ускорят шаг,
               желая оторваться от преследователя. Когда впереди показываются
@@ -90,10 +90,10 @@ export default function RedHatChapter3_2() {
               всю информацию, благодарят Шапочку за сотрудничество и
               отправляются на поиски преступника.
             </p>
-            <div className="flex gap-2 justify-center">
+            <div className='flex gap-2 justify-center'>
               <ButtonStories
-                link="/stories/red-hat/chapter-4/choice-3"
-                text="Выбрать"
+                link='/stories/red-hat/chapter-4/choice-3'
+                text='Выбрать'
               />
             </div>
           </div>

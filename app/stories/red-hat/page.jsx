@@ -11,7 +11,7 @@ export default function RedHat() {
   return (
     <section className='flex min-h-screen flex-col items-center justify-start p-2'>
       <h1 className='text-4xl font-comial my-4'>Красная шапочка</h1>
-      <div className='red-hat-fon p-3 rounded-lg'>
+      <div className='red-hat-fon p-3 rounded-lg max-w-md'>
         <p className='text-base text-center font-cloudWorld text-black'>
           История о соверменной девочке с головным убором красного цвета
         </p>

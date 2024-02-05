@@ -1,5 +1,5 @@
 import SearchBar from "@/components/SearchBar";
-import { words } from "@/public/search-info/data";
+// import { words } from "@/public/search-info/data";
 
 export const metadata = {
   title: "Поиск определений",

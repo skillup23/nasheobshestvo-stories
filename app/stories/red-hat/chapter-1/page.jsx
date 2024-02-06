@@ -7,7 +7,7 @@ import TitleChapter from '@/components/TitleChapter';
 export default function RedHatChapter1() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
-      <TitleChapter text="Глава 1." />
+      <TitleChapter text="Глава 1" />
       <PageBook
         pageOne={
           <div className="red-hat-fon p-3 rounded-lg max-w-md">

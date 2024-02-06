@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ButtonStories from '@/components/ButtonStories';
-import imgData from '@/public/stories/RedHat/RH_start.jpg';
+import imgData from '@/public/stories/RedHat/RH_start1.jpg';
 
 export const metadata = {
   title: 'Красная Шапочка',

@@ -1,5 +1,5 @@
 import ButtonStories from '@/components/ButtonStories';
-import imgData from '@/public/stories/RedHat/RH_city.jpg';
+import imgData from '@/public/stories/RedHat/RH_city1.jpg';
 import Image from 'next/image';
 // import Link from "next/link";
 

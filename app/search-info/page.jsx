@@ -1,18 +1,18 @@
-import SearchBar from "@/components/SearchBar";
-// import { words } from "@/public/search-info/data";
+import SearchBar from '@/components/SearchBar';
+// import { data } from '@/public/search-info/data';
 
 export const metadata = {
-  title: "Поиск определений",
-  description: "Поиск определений Нашего Общества",
+  title: 'Поиск определений',
+  description: 'Поиск определений Нашего Общества',
 };
 
 async function getData() {
-  const res = await fetch(process.env.URL + "/api/words", {
+  const res = await fetch(process.env.URL + '/api/words', {
     next: { revalidate: 60 },
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    throw new Error('Failed to fetch data');
   }
 
   return res.json();
@@ -23,7 +23,7 @@ const SearchInfo = async () => {
   // const data = words;
 
   return (
-    <div className='m-8 mt-12 flex flex-col justify-center max-w-lg'>
+    <div className="m-8 mt-12 flex flex-col justify-center max-w-lg">
       <SearchBar words={data} />
       {/* {data.map((item) => (
         <div key={item.id}>

@@ -1,3 +1,5 @@
+'use client';
+
 import imgData from '@/public/stories/RedHat/RH_chapter2.jpg';
 import Image from 'next/image';
 import ButtonStories from '@/components/ButtonStories';
@@ -5,6 +7,9 @@ import PageBook from '@/components/PageBook';
 import TitleChapter from '@/components/TitleChapter';
 
 export default function RedHatChapter2_1() {
+  const searchParams = useSearchParams();
+  console.log(searchParams.get('data'));
+
   return (
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
       <TitleChapter text="Глава 2" />

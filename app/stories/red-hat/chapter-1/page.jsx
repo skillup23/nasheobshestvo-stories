@@ -1,10 +1,24 @@
+'use client';
+
 import imgData from '@/public/stories/RedHat/RH_chapter1.jpg';
 import Image from 'next/image';
 import ButtonStories from '@/components/ButtonStories';
 import PageBook from '@/components/PageBook';
 import TitleChapter from '@/components/TitleChapter';
+import { useSearchParams } from 'next/navigation';
 
 export default function RedHatChapter1() {
+  const searchParams = useSearchParams();
+  console.log(searchParams.get('data'));
+
+  const [dataArticle, setDataArticle] = useState('');
+  setDataArticle(searchParams.get('data'));
+
+  function useSetDataArticle(index) {
+    const newData = dataArticle + index;
+    setDataArticle(newData);
+  }
+
   return (
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
       <TitleChapter text="Глава 1" />
@@ -23,9 +37,12 @@ export default function RedHatChapter1() {
               Красная Шапочка жила в отдельной квартире со всеми удобствами
               вместе с мамой и папой. Шапочка была прилежной дочерью и исполняла
               все свои обязанности по дому. Вместе с тем, знала и свои права, а
-              именно право жить и воспитываться в семье, право на имя
-              (нормальное), (паспорт с фамилией-именем) отчество и фамилию,
-              право выражать свое мнение (2).
+              именно{' '}
+              <span className="decoration-solid" onClick={useSetDataArticle(2)}>
+                право жить и воспитываться в семье, право на имя (нормальное),
+                (паспорт с фамилией-именем) отчество и фамилию, право выражать
+                свое мнение.
+              </span>
             </p>
             <p className="text-normal mt-2">
               Свое имя Шапочка получила благодаря необычному головному убору
@@ -37,6 +54,7 @@ export default function RedHatChapter1() {
               <ButtonStories
                 link="/stories/red-hat/chapter-2/choice-1"
                 text="Выбрать"
+                data={dataArticle}
               />
             </div>
           </div>

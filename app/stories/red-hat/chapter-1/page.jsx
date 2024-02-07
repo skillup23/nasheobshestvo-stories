@@ -15,7 +15,7 @@ export default function RedHatChapter1() {
               src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
+              alt="Красная шапочка в окне дома"
               className="my-5 rounded-lg"
               priority
             />
@@ -47,7 +47,7 @@ export default function RedHatChapter1() {
               src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
+              alt="Красная шапочка в окне дома"
               className="my-5 rounded-lg"
               priority
             />

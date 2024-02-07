@@ -1,4 +1,5 @@
 import imgData from '@/public/stories/RedHat/RH_chapter3.jpg';
+import imgData2 from '@/public/stories/RedHat/RH_chapter3_2.jpg';
 import Image from 'next/image';
 import ButtonStories from '@/components/ButtonStories';
 import PageBook from '@/components/PageBook';
@@ -15,7 +16,7 @@ export default function RedHatChapter3_1() {
               src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
+              alt="Красная шапочка идет по лесу и встречает волка"
               className="my-5 rounded-lg"
               priority
             />
@@ -45,6 +46,14 @@ export default function RedHatChapter3_1() {
               преступления. Он извинился пред Красной Шапочкой (сказал, что
               «опаздывает») и побежал вперед.
             </p>
+            <Image
+              src={imgData2}
+              width={500}
+              height={500}
+              alt="Волк и Кощей вламываются к бабушке"
+              className="my-5 rounded-lg"
+              priority
+            />
             <p className="text-normal mt-2">
               По дороге он подыскивает пособника в лице Кощея Бессмертного и
               склоняет его к совершению преступления группой лиц по

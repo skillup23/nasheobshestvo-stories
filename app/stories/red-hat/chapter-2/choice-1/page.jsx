@@ -15,7 +15,7 @@ export default function RedHatChapter2_1() {
               src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
+              alt="Красная шапочка печет пирожки дома"
               className="my-5 rounded-lg"
               priority
             />
@@ -49,7 +49,7 @@ export default function RedHatChapter2_1() {
               src={imgData}
               width={500}
               height={500}
-              alt="Тестовая картинка"
+              alt="Красная шапочка печет пирожки дома"
               className="my-5 rounded-lg"
               priority
             />

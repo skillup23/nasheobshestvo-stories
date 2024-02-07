@@ -19,7 +19,7 @@ export default function RedHat() {
           src={imgData}
           width={500}
           height={500}
-          alt="Тестовая картинка"
+          alt="Красная шапочка"
           className="my-5 rounded-lg"
           priority
         />

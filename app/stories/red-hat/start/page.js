@@ -12,7 +12,7 @@ export default function RedHatStart() {
           src={imgData}
           width={500}
           height={500}
-          alt="Тестовая картинка"
+          alt="Город Сказочной Федерации"
           className="my-5 rounded-lg"
           priority
         />

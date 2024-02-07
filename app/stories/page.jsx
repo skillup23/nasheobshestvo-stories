@@ -13,7 +13,7 @@ export const metadata = {
 export default function Stories() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
-      <h1 className="text-4xl font-comial my-4">Сказки Нашего Общества</h1>
+      <h1 className="text-4xl font-comial mb-4 mt-8">Сказки Нашего Общества</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
         <p className="text-base text-center font-cloudWorld text-black">
           Изучение обществознания в сказительной форме

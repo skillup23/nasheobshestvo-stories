@@ -8,6 +8,9 @@ export default function RedHatStart() {
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
       <h1 className="text-4xl font-comial my-4">Вступление</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
+        <p className="text-normal text-xs text-center">
+          В некотором царстве, в некотором государстве…
+        </p>
         <Image
           src={imgData}
           width={500}
@@ -16,7 +19,7 @@ export default function RedHatStart() {
           className="my-5 rounded-lg"
           priority
         />
-        <p className="text-base font-cloudWorld text-black">
+        <p className="text-normal">
           Город, в котором жила «Красная Шапочка 2.0» (далее по тексту – Шапочка
           / Красная Шапочка), имеет статус города федерального значения. Наравне
           с другими равноправными субъектами он входит в состав Сказочной

@@ -2,9 +2,9 @@ import ButtonStories from '@/components/ButtonStories';
 import imgData from '@/public/stories/RedHat/RH_start1.jpg';
 import Image from 'next/image';
 import Accordion from '@/components/Accordion';
-import { accordionDataFinal_1 } from '@/public/final/accordeon';
+import { accordionDataFinal_1 } from '@/public/stories/RedHat/final/accordeon';
 
-export default function RedHatStart() {
+export default function RedHatFinal_1() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
       <h1 className="text-4xl font-comial my-4">Финал 1 пути</h1>
@@ -18,15 +18,17 @@ export default function RedHatStart() {
           priority
         />
         <h3 className="text-xl font-cloudWorld text-black text-center">
-          Статьи конституции и других правовых актов, подходящих под эту историю
+          Законы и статьи, которые вы собрали на этом пути
         </h3>
         <div className="accordion">
           {accordionDataFinal_1.map(({ title, content, id }) => (
-            <Accordion title={title} content={content} key={id} />
+            <Accordion title={title} key={id}>
+              {content}
+            </Accordion>
           ))}
         </div>
         <div className="flex gap-2 justify-center">
-          <ButtonStories link="/stories/red-hat" text="Попробовать снова" />
+          <ButtonStories link="/stories" text="Попробовать снова" />
         </div>
       </div>
     </section>

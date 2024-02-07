@@ -2,13 +2,23 @@
 
 import React, { useState } from 'react';
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ title, children, styleCustom, styleCustomTitle }) => {
   const [isActive, setIsActive] = useState(false);
 
+  if (!styleCustom) {
+    styleCustom = '';
+  }
+
+  if (!styleCustomTitle) {
+    styleCustomTitle = '';
+  }
+
   return (
-    <div className="accordion-item text-base text-black font-cloudWorld bg-[#9d9d9d] rounded-lg py-1 my-4">
+    <div
+      className={`accordion-item text-base text-black font-cloudWorld bg-[#9d9d9d] rounded-lg py-1 my-4 ${styleCustom}`}
+    >
       <div
-        className="accordion-title flex justify-between p-1 text-lg"
+        className={`accordion-title flex justify-between p-1 text-lg ${styleCustomTitle}`}
         onClick={() => setIsActive(!isActive)}
       >
         <h6>{title}</h6>
@@ -16,7 +26,7 @@ const Accordion = ({ title, content }) => {
       </div>
       {isActive && (
         <div className="accordion-content bg-[#959092] rounded-lg px-1">
-          {content}
+          {children}
         </div>
       )}
     </div>

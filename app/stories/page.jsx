@@ -27,10 +27,10 @@ export default function Stories() {
           priority
         />
         <Accordion
-          title="Краткая инструкция."
+          title="Краткая инструкция"
           key={1}
-          styleCustom="bg-black text-white"
-          styleCustomTitle="px-4"
+          styleCustom="bg-black text-white rounded-[25px]"
+          styleCustomTitle="px-4 uppercase font-comial justify-center"
         >
           <p className="text-base font-cloudWorld text-black">
             1. Чуть ниже распологается список сказок. Выберите любую из них,
@@ -67,13 +67,26 @@ export default function Stories() {
           />
         </Accordion>
 
-        <div className="flex gap-2 justify-center flex-col">
+        <p className="text-2xl text-center font-cloudWorld text-black mt-12">
+          Список сказок
+        </p>
+
+        <div className="flex justify-center flex-col">
           <ButtonStories
             link="/stories/red-hat/start"
             text="Красная шапочка"
-            styleButton="text-center"
+            styleButton="text-center py-1"
           />
-          <ButtonStories link="/" text="На Главную" styleButton="text-center" />
+          <ButtonStories
+            link="#"
+            text="В разработке"
+            styleButton="text-center mt-2"
+          />
+          <ButtonStories
+            link="/"
+            text="На Главную"
+            styleButton="text-center mt-12"
+          />
         </div>
       </div>
     </section>

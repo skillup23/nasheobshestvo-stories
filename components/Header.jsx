@@ -43,13 +43,6 @@ export default function Header() {
         </Link>
         <button
           type="button"
-          onClick={() => visibleMenu()}
-          className="text-xl border p-2 my-2 w-1/2"
-        >
-          Закрыть меню
-        </button>
-        <button
-          type="button"
           onClick={function () {
             router.back();
             visibleMenu();
@@ -57,6 +50,13 @@ export default function Header() {
           className="text-xl border p-2 my-2 w-1/2"
         >
           Назад
+        </button>
+        <button
+          type="button"
+          onClick={() => visibleMenu()}
+          className="text-xl border p-2 my-2 w-1/2"
+        >
+          Закрыть меню
         </button>
       </div>
     </header>

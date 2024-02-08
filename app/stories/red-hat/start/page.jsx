@@ -8,7 +8,7 @@ export default function RedHatStart() {
     <section className="flex min-h-screen flex-col items-center justify-start p-2">
       <h1 className="text-4xl font-comial my-4">Вступление</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
-        <p className="text-normal text-xs text-center">
+        <p className="text-normal text-center">
           В некотором царстве, в некотором государстве…
         </p>
         <Image

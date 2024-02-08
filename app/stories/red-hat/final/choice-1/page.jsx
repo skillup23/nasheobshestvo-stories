@@ -22,7 +22,11 @@ export default function RedHatFinal_1() {
         </h3>
         <div className="accordion">
           {accordionDataFinal_1.map(({ title, content, id }) => (
-            <Accordion title={title} key={id}>
+            <Accordion
+              title={title}
+              key={id}
+              styleCustom="bg-black text-white rounded-[10px]"
+            >
               {content}
             </Accordion>
           ))}

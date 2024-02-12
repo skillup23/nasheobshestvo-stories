@@ -68,12 +68,12 @@ export default function Stories() {
         </Accordion>
 
         <p className="text-2xl text-center font-cloudWorld text-black mt-12">
-          Список сказок
+          СКАЗКИ:
         </p>
 
         <div className="flex justify-center flex-col">
           <ButtonStories
-            link="/stories/red-hat/start"
+            link="/stories/red-hat"
             text="Красная шапочка"
             styleButton="text-center py-1"
           />

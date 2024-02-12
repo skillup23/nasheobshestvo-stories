@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function RedHatStart() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-start p-2">
+    <div className="flex items-center flex-col">
       <h1 className="text-4xl font-comial my-4">Вступление</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
         <p className="text-normal text-center">
@@ -23,12 +23,12 @@ export default function RedHatStart() {
           Город, в котором жила «Красная Шапочка 2.0» (далее по тексту – Шапочка
           / Красная Шапочка), имеет статус города федерального значения. Наравне
           с другими равноправными субъектами он входит в состав Сказочной
-          Федерации (1).
+          Федерации 🥧.
         </p>
         <div className="flex gap-2 justify-center">
           <ButtonStories link="/stories/red-hat/chapter-1" text="Далее" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

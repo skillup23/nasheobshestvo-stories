@@ -6,7 +6,7 @@ import { accordionDataFinal_1 } from '@/public/stories/RedHat/final/accordeon';
 
 export default function RedHatFinal_1() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-start p-2">
+    <div className="flex items-center flex-col">
       <h1 className="text-4xl font-comial my-4">Финал 1 пути</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
         <Image
@@ -26,6 +26,7 @@ export default function RedHatFinal_1() {
               title={title}
               key={id}
               styleCustom="bg-black text-white rounded-[10px]"
+              styleCustomTitle="justify-between"
             >
               {content}
             </Accordion>
@@ -35,6 +36,6 @@ export default function RedHatFinal_1() {
           <ButtonStories link="/stories" text="Попробовать снова" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

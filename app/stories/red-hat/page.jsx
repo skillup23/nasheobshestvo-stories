@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RedHat() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-start p-2">
+    <div className="flex items-center flex-col">
       <h1 className="text-4xl font-comial my-4">Красная шапочка</h1>
       <div className="red-hat-fon p-3 rounded-lg max-w-md">
         <p className="text-base text-center font-cloudWorld text-black">
@@ -28,6 +28,6 @@ export default function RedHat() {
           <ButtonStories link="/stories/red-hat/start" text="Начать" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

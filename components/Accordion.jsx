@@ -22,7 +22,7 @@ const Accordion = ({ title, children, styleCustom, styleCustomTitle }) => {
         onClick={() => setIsActive(!isActive)}
       >
         <h6 className="mr-3">{title}</h6>
-        <p className="mr-3 text-xl">{isActive ? '🥧' : '🍄'}</p>
+        <p className="mr-3 text-xl">{isActive ? '-' : '+'}</p>
       </div>
       {isActive && (
         <div className="accordion-content bg-white rounded-lg px-1 pt-1 text-black">
